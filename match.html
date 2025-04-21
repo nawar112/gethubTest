@@ -1,0 +1,73 @@
+<html lang="ar">
+<head>
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glistéra - مطابقة الفاونديشن</title>
+</head>
+<body>
+<!-- لابد من استخدام جافا سكربت لجعل النتيجة تظهر في نهاية الصفحة -->
+    <header>
+        <nav>
+            <ul class="header">
+                 <li><a href="Glistéra-home.html">الصفحة الرئيسية</a></li>
+                <li><a href="shop.html">المتجر</a></li>
+                <li><a href="SkinAnalysis.html">تحليل البشرة</a></li>
+                <li><a href="match.html">مطابقة المكياج</a></li>
+                <li><a href="cart.html">السلة</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>🎨🔍 مطابقة درجات الفاونديشن</h1>
+        <p>أدخلي بيانات الفاونديشن الخاص بك وسنساعدك في العثور على الدرجة المطابقة في ماركات أخرى!</p>
+
+      <form action="foundation-match-result.html" method="POST">
+            <!-- ملاحظة : المدخلات افتراضية ويمكن تعديلها لاحقا حسب المعلومات الموجودة في قاعدة البيانات الي راح تسويها الطالبة-->
+			
+            <!-- اختيار الماركة الحالية -->
+            <label for="current-brand">ماركة الفاونديشن الحالية:</label>
+            <select id="current-brand" name="current-brand" required>
+                <option value="" disabled selected>اختاري الماركة</option>
+                <option value="Fenty Beauty">Fenty Beauty</option>
+                <option value="Huda Beauty">Huda Beauty</option>
+                <option value="MAC">MAC</option>
+                <option value="NARS">NARS</option>
+                <option value="Maybelline">Maybelline</option>
+            </select>
+</br></br>
+            <!-- اختيار درجة الفاونديشن الحالية -->
+            <label for="current-shade">درجة الفاونديشن الحالية:</label>
+            <select id="current-shade" name="current-shade" required>
+                <option value="" disabled selected>اختاري الدرجة</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+                <option value="220">220</option>
+                <option value="300">300</option>
+                <option value="350">350</option>
+            </select>
+</br></br>
+            <!-- اختيار الماركة التي يبحث فيها -->
+            <label for="target-brand">الماركة التي تريدين البحث فيها:</label>
+            <select id="target-brand" name="target-brand" required>
+                <option value="" disabled selected>اختاري الماركة المطلوبة</option>
+                <option value="Fenty Beauty">Fenty Beauty</option>
+                <option value="Huda Beauty">Huda Beauty</option>
+                <option value="MAC">MAC</option>
+                <option value="NARS">NARS</option>
+                <option value="Maybelline">Maybelline</option>
+            </select>
+</br></br>
+            <button type="submit">🔍 البحث عن الدرجة المطابقة</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة &copy; Glistéra</p>
+        <p>تابعونا على <a href="#">إنستقرام</a> | <a href="#">تويتر</a></p>
+    </footer>
+</body>
+</html>
