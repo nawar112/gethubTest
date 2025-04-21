@@ -1,0 +1,66 @@
+<html lang="ar">
+<head>
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glistéra - الدفع</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="header">
+                <li><a href="Glistéra-home.html">الصفحة الرئيسية</a></li>
+                <li><a href="shop.html">المتجر</a></li>
+                <li><a href="SkinAnalysis.html">تحليل البشرة</a></li>
+                <li><a href="match.html">مطابقة المكياج</a></li>
+                <li><a href="cart.html">السلة</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>إتمام الطلب</h1>
+       <form action="OrderConfirmation.html" method="POST">
+ <fieldset>             
+            <legend>📍 معلومات الشحن</legend>
+            <label for="city">المدينة:</label>
+            <input type="text" id="city" name="city" required>
+</br></br>
+            <label for="district">الحي:</label>
+            <input type="text" id="district" name="district" required>
+</br></br>
+            <label for="street">الشارع:</label>
+            <input type="text" id="street" name="street" required>
+</br></br>
+            <label for="postal-code">الرقم البريدي:</label>
+            <input type="text" id="postal-code" name="postal-code" required>
+</br></br>
+            <label for="address-details">وصف إضافي للعنوان:</label>
+            <textarea id="address-details" name="address-details"></textarea>
+</fieldset>
+ <fieldset> 
+           <legend>💳 معلومات البطاقة</legend>
+            <label for="card-number">رقم البطاقة:</label>
+            <input type="text" id="card-number" name="card-number" required>
+</br></br>
+            <label for="card-name">الاسم على البطاقة:</label>
+            <input type="text" id="card-name" name="card-name" required>
+</br></br>
+            <label for="card-expiry">تاريخ انتهاء البطاقة:</label>
+            <input type="month" id="card-expiry" name="card-expiry" required>
+</br></br>
+            <label for="cvv">رمز الأمان (CVV):</label>
+            <input type="text" id="cvv" name="cvv" maxlength="3" pattern="[0-9]{3}" required>
+</fieldset>
+            <button type="submit">إتمام الطلب</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة &copy; Glistéra</p>
+        <p>تابعونا على <a href="#">إنستقرام</a> | <a href="#">تويتر</a></p>
+    </footer>
+</body>
+</html>
